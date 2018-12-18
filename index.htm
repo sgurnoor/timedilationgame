@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ASTRO 107 - The Time Dilation Game</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <style type="text/css">
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-family: "Caviar Dreams";
+  font-size: 50px;
+  font-weight: bold;
+}
+a {
+  color: white;
+}
+input {
+  -webkit-appearance: button;
+  font-size: 25px;
+}
+#intro {
+  margin-top: 100px;
+}
+    </style>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/obj.js"></script>
+    <script type="text/javascript" src="js/obj_prop.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+  </head>
+  <body>
+    <div id="back" style="display: none; position: absolute; width: 100%; height: 100%; z-index: -2; background-color: #414a4c"></div>
+    <div id="intro">
+      The Time Dilation Game
+      <div style="font-size: 25px"><br/>
+
+        You can’t see black holes but you can observe them in two ways: <br>
+        1. How other bodies behave around it <br>
+        2. How time slows down when you get near one, making other objects appear to move fast <br> <br>
+
+        Objective: Use your observational skills to stay away from black holes for as long as possible. <br>
+    <img id="play" src="img/play.svg" style="width:100px; height: 100px; display:block; margin-left: auto; margin-right: auto;" onclick="load('black')"/>
+      <div id="controls">
+        <h2>Controls</h2>
+        <div class="one">
+          <img src="img/movement.png"> <p> Movement </p>
+        </div>
+        <div class="two">
+          <img src="img/space.png"> <p> Restart </p>
+        </div>
+        </div>
+      </div>
+      <div id="credits">
+        <h3>Credits</h3>
+        <p>Game adapted from <a href="https://github.com">Death by Time Travel</a></p>
+        <p>Icons from Freepik on <a href="http://flaticon.com">FlatIcon</a></p><br>
+        <p>Created by Gurnoor Singh for ASTRO 107</p>
+      </div>
+    </div>
+    <div id="instruct" class="texty" style="display: none">Use arrow keys to move. Avoid the time fields!</div>
+    <div id="gameover" class="texty" style="display: none; color: white">
+      <br><br>GAME OVER<br>
+      Score: <span id="score">&nbsp;</span>  Highest: <span id="max_score">&nbsp;</span> <br/>
+      <p>Press space to restart</p>
+<!--       <input type="button" value="Play Again" onclick="location.reload()"/>
+ -->    </div>
+  </body>
+</html>

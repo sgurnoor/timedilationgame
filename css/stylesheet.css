@@ -1,0 +1,42 @@
+#play {
+	margin-top: 50px;
+}
+
+/*#control-img {
+    text-align: justify;
+    width: 20px;
+}
+
+#control-img img {
+    display: inline-block;
+}*/
+
+/*#controls {
+	display: inline-block;
+}*/
+
+
+#controls {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 50px;
+}
+.one {
+    margin-top: 20px;
+    width: 50%;
+    float: left;
+}
+.two {
+    margin-top: 80px;
+    margin-left: 20%;
+    height: 200px;
+}
+
+a {
+    color: #6666FF;
+}
+
+p {
+    font-size: 20px;
+}
