@@ -25,7 +25,6 @@ function load(color) {
     localStorage['high_score'] = 0
   document.getElementById("max_score").firstChild.nodeValue = localStorage['high_score']
   document.getElementById("intro").style.display = "none"
-  document.getElementById("instruct").style.display = ""
   document.body.style.backgroundColor = color
   player = new Obj("img/obj0.png", 0, 0, 0, 0, Math.PI / 2)
   for (var i = 0; i < (NFields / FieldRatio - NFields) / 4; i++) {
@@ -42,9 +41,6 @@ function load(color) {
   }
   update()
   timer = setInterval(update, UpdateRate)
-  setTimeout(function() {
-    document.getElementById("instruct").style.display = "none"
-  }, 10000)
 }
 
 function update() {
@@ -159,7 +155,6 @@ function updatePos(obj, fwd, rot) {
           // game over
           document.body.style.backgroundColor = "gray"
           document.getElementById("back").style.display = "" // workaround for safari
-          document.getElementById("instruct").style.display = "none"
           document.getElementById("gameover").style.display = ""
           clearInterval(timer)
         }
